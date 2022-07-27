@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="description">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    </link>
+    <title>Calculator</title>
+
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+    <h1>Calculator</h1>
+
+    <div id="calculator">
+        <div id="display_bar_div">
+            <div id="small_display_div">
+                <p id="small_display_bar_p"></p>
+            </div>
+            <p id="display_bar_p">0</p>
+        </div>
+        <table>
+            <tr id="tr1">
+                <td><input type="button" id="btn_add" value="+" onclick="doOperations('+');"></td>
+                <td><input type="button" value="-" onclick="doOperations('-');"></td>
+                <td><input type="button" value="×" onclick="doOperations('*');"></td>
+                <td><input type="button" value="÷" onclick="doOperations('/');"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="7" onclick="updateDisplay(7);"></td>
+                <td><input type="button" value="8" onclick="updateDisplay(8);"></td>
+                <td><input type="button" value="9" onclick="updateDisplay(9);"></td>
+                <td rowspan="4"><input type="button" id="btn_equal" value="=" onclick="doCalculation('=');"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="4" onclick="updateDisplay(4);"></td>
+                <td><input type="button" value="5" onclick="updateDisplay(5);"></td>
+                <td><input type="button" value="6" onclick="updateDisplay(6);"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="1" onclick="updateDisplay(1);"></td>
+                <td><input type="button" value="2" onclick="updateDisplay(2);"></td>
+                <td><input type="button" value="3" onclick="updateDisplay(3);"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="0" onclick="updateDisplay(0);"></td>
+                <td><input type="button" value="." onclick="updateDisplay('.');"></td>
+                <td><input type="button" id="btn_clear" value="C" onclick="clearDisplay();"></td>
+            </tr>
+        </table>
+
+    </div>
+</body>
+
+
+</html>
